@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarnerBros.com | Home of WB Movies, TV, Games, and more!</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style></style>
+    <link href="CSS/style2.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <div id="maincontainer">
+        <nav id="banner" class="sticky">
+            <a id="log" href="index.html">
+                <img id="logo" src="images/wb.png"> WarnerBros
+            </a>
+            <a id="line" class="active" href="index.html">Home</a>
+            <a id="line" href="movies.html">Movies</a>
+            <a id="line" href="tvshows.html">Tv Shows</a>
+            <a id="line" href="games.html">Games & Apps</a>
+            <a id="line" href="collections.html">Collections</a>
+            <input type="search" placeholder="Search.." id="myInput">
+            <a href="feedback.html">
+                <button id="feedback">Feedback</button>
+            </a>
+        </nav>
+        <script>
+            // JavaScript to add/remove sticky class on scroll
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {stickyHeader()};
+
+            // Get the navbar
+            var header = document.getElementById("banner");
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+        </script>
+        
+
+        <div id="slideshow" class="master">
+            <img id="slide" src="images/slide/0.png" alt="" onerror="this.error = null; this.src = images/error.jfif;">
+            <script>
+                //create image array
+                var arrimages = new Array();
+                //add images to array
+                for(var k = 0; k < 9; k++){
+                    arrimages[k] = "images/slide/"+ k +".png";
+                }
+                //variable for curent image index
+                var currentimageindex = 0;
+                //slideshow function
+                function slideshow(){
+                    //get image tag and load image
+                    document.getElementById("slide").src = arrimages[currentimageindex];
+                    currentimageindex = (currentimageindex < arrimages.length - 1)?currentimageindex + 1 : 0;
+                }
+                //call slideshow every 10seconds
+                setInterval("slideshow()", 4000);
+            </script>
+        </div>
+            
+            <div id="colcontainer">
+                <div id="subtitle">
+                    <h2 style="text-align: center; color:white;">WHAT'S ON WARNERBROS</h2>
+                </div>
+
+                <div class="line">
+                    <h3>Movies</h3>
+                    <div id="movies">
+                        
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Movies/becky.jpeg" alt="BECKY" onclick="wrathofbecky.html">
+                            </div>
+                            <h4>BECKY</h4>
+                            <span>84 min | Action</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Movies/blended.jpeg" alt="BLENDED">
+                            </div>
+                            <h4>BLENDED</h4>
+                            <span>117 min | Comedy</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Movies/enough.jpeg" alt="ENOUGH">
+                            </div>
+                            <h4>ENOUGH</h4>
+                            <span>115 min | Action</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Movies/megan.jpeg" alt="MEGAN">
+                            </div>
+                            <h4>MEGAN</h4>
+                            <span>102 min | Horror</span>
+                        </div>
+                        
+                    </div>
+                    </div>
+
+                    <div class="line">
+                    <h3>Tv Shows</h3>
+                    <div id="tvshows">
+                        
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/criminal.jpeg" alt="CRIMINAL RECORD">
+                            </div>
+                            <h4>CRIMINAL RECORD</h4>
+                            <span>1 Season | Thriller</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/obsession.jpeg" alt="OBSESSION">
+                            </div>
+                            <h4>OBSESSION</h4>
+                            <span>1 Season | Thriller</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/lawyer.jpeg" alt="THE LINCOLN LAWYER">
+                            </div>
+                            <h4>THE LINCOLN LAWYER</h4>
+                            <span>2 Seasons | Drama</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/foolme.jpeg" alt="FOOL ME ONCE">
+                            </div>
+                            <h4>FOOL ME ONCE</h4>
+                            <span>1 Season | Thriller</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="line">
+                    <h3>GAMES</h3>   
+                    <div id="games">
+                        
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Games/chess.jpeg" alt="THE CHESS">
+                            </div>
+                            <h4>THE CHESS</h4>
+                            <span>3.5 &#9734; | Free</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Games/solitaire.jpeg" alt="SPIDER SOLITAIRE">
+                            </div>
+                            <h4>SPIDER SOLITAIRE</h4>
+                            <span>4.5 &#9734;   | Free</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Games/roblox.jpeg" alt="ROBLOX">
+                            </div>
+                            <h4>ROBLOX</h4>
+                            <span>4.5 &#9734; | Free</span>
+                        </div>
+                        <div class="box">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Games/talkingcat.jpeg" alt="TALKING CAT">
+                            </div>
+                            <h4>TALKING CAT</h4>
+                            <span>2.5 &#9734; | Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer class="footer">
+            <p>© 2024 Warner Bros. All rights reserved.</p>
+            <div id="foot">
+                <span id="tiktok">
+                    <a href="tiktok.com">
+                        <img src="images/social media/twitter.png" title="Tiktok" alt="Tiktok">
+                    </a>
+                </span>
+                <span id="whatsapp">
+                    <a href="whatsapp.com">
+                        <img src="images/social media/whatsapp.png" title="WhatsApp" alt="WhatsApp">
+                    </a>
+                </span>
+                <span id="instagram">
+                    <a href="instagram.com">
+                        <img src="images/social media/instagram.png" title="Instagram" alt="Instagram">
+                    </a>
+                </span>
+                <span id="facebook">
+                    <a href="facebook.com">
+                        <img src="images/social media/facebook.jpeg" title="Facebook" alt="Facebook">
+                    </a>
+                </span>
+        
+        </footer>
+    </div>
+</body>
+</html>

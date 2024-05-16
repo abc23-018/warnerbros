@@ -1,0 +1,297 @@
+/*Games style sheet*/
+body{
+    background-color: rgb(9, 9, 12);
+    font-family:Arial, Helvetica, sans-serif;
+}
+#banner{
+    width: 80%;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    height: 40px;
+}
+#logo{
+    height: 5vh;
+    vertical-align: middle;
+    background-color: black;
+    background-blend-mode:color-burn;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+#banner a.active{
+    color: yellow;
+}
+#banner a:hover{
+    font-weight: bolder;
+}
+#log{
+    margin-right: 50px;
+    margin-left: opx;
+    font-weight: bolder;
+    background-color: black;
+}
+#line {
+    border-bottom: 2px solid red;
+}
+#product{
+    border-bottom: 1px solid red;
+}
+#myInput{
+    margin-left: 65px;
+    width: 180px;
+    height: 25px;
+    border-color: red;
+    border-radius: 5px;
+}
+#feedback{
+    background-color: red;
+    border-radius: 5px;
+    height: 29px;
+    margin-left: 5px;
+    border-color: red;
+}
+#gamecontent {
+    width: 80%;
+    background-color:rgba(211, 211, 211, 0.1);
+    height: 69vh;
+    border-radius: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0;
+}
+#moviecontent{
+    width: 80%;
+    background-color:rgba(211, 211, 211, 0.1);
+    height: 90vh;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+#descriptioncontent{
+    display: flex;
+}
+#imggame{
+    width: 30%;
+    max-width: 30%;
+    height: 50vh;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    border-radius: 3%;
+}
+#imgmovie{
+    width: 30%;
+    height: 440px;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    border-radius: 3%;
+}
+#rate{
+    display: inline-block;
+    line-height: 1 !important;
+}
+.rate{
+    border-right: 3px gray;
+}
+#game{
+    display: inline;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+    width: 60%;;
+}
+#average{
+    display: block;
+    padding-top: 5%;
+    padding-right: 10%;
+    font-size: large;
+}
+.short{
+    font-size: medium !important;
+}
+#rating{
+    line-height: 1.5;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+#download{
+    margin-top: 5vh;
+    background-color: teal;
+    font-size: large;
+    width: 70%;
+    height: 7vh;
+    border-color: rgba(211, 211, 211, 0.1);
+}
+#screenshots{
+    background-color: aliceblue;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 7px;
+    margin: 5% 10% 0;
+    margin-top: 0;
+}
+#shot{
+    height: 27vh;
+    width: 24vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 2.5vh;
+}
+#photos{
+    text-align: center;
+    padding-top: 3%;
+}
+#boxscreeshots{
+    display: flex;
+}
+footer{
+    height: 4vh;
+    background-color: rgb(12, 12, 12);
+    border-radius: 5px;
+    margin: 10%;
+    margin-bottom: 0;
+    margin-top: 1;
+}
+footer a>img{
+    border-radius: 50%;
+    height: 6vh;
+}
+footer p{
+    color:aliceblue;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    padding:2%;
+    margin: 10%;
+    margin-bottom:0;
+    margin-top: 0;
+}
+#appdescription{
+    background-color: aliceblue;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 5px;;
+}
+#product{
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: justify;
+}
+.product{
+    padding-bottom: 3%;
+}
+#tv> li{
+    list-style: none;
+    display: inline;
+}
+#tv{
+    margin-top: 20%;
+}
+#watch{
+    background-color: red;
+    border-color: rgba(211, 211, 211, 0.1);
+    font-size: large;
+    width: 10%;
+    height: 4vh;
+    border-radius: 50%;
+}
+/* Adjust layout for smaller screens */
+/* Styles for tablets */
+@media (min-width: 270px) and (max-width: 700px) {
+
+    #colcontainer, #maincontent, #gamecontent, #screenshots, #appdescription, #banner, footer{
+        width: 100%; 
+        margin: 0;
+    }
+    #log {
+        margin-left: auto; /* Push logo to the left */
+    }
+    #myInput {
+        width: 130px;
+        margin-left: 5px;
+    }
+    a,#average, h2, h3, h4, h5, span{
+        font-size:small;
+    }
+    #banner{
+        align-items: flex-start;
+    }
+    #shot{
+        width: 30vw;
+        margin-left: 1%;
+    }
+    footer{
+        width: 100%; 
+        margin: 0;
+    }
+}
+/* Styles for extra small devices (phones) */
+@media screen and (min-width:270px) and (max-width: 576px) {
+
+    #colcontainer, #maincontent, #gamecontent, #screenshots, #appdescription, #banner, footer, #moviecontent, #gamecontent {
+        width: 100%; 
+        margin: 0;
+    }
+    #moviecontent, #gamecontent{
+        height: 85vh;
+    }
+    #log {
+        margin-left: auto;
+        margin-bottom: 10px; 
+    }
+    #myInput {
+        margin: 10px 0; 
+        width: 10vw;
+        height: 1vh;
+    }
+    a, #average, h2, h3, h4, h5 , #feedback, #watch, #download, #myInput, p{
+        font-size:xx-small;
+    }
+    b, #product, #colspan{
+        font-size: small;
+    }
+    #download{
+        margin-left: 12%;
+    }
+    #shot{
+        width: 30vw;
+        margin-left: 1%;
+    }
+    #logo{
+        height: 2vh;
+    }
+    #imgmovie{
+        height: 25vh;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #feedback, #watch, #download{
+        height: 2vh;   
+    }
+    footer a>img{
+        height: 2vh;
+        
+    }
+    #log{
+        margin-right: 0;
+    }
+    #descriptioncontent{
+        display: block;
+    }
+    #product{
+        margin-bottom: 0;
+    }
+    a{
+        margin: 0;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>FEEDBACK</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="data/countries_json.json"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+    
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        label {
+            font-weight: bold;
+        }
+    
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+</head>
+<body>
+ 
+    <form name="feedback" id="feedback">
+        <fieldset id="fieldsetcontrols" class="container">
+            <legend>FEEDBACK</legend>
+            <input type="hidden" id="customerid" name="customerid" class="input-field">
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required="true" oninvalid="SetCustomValidity('Please enter your Firstname!!')" oninput="SetCustomValidity('')"/>
+            </br>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surnname" name="surname" placeholder="surname" required="true" oninvalid="SetCustomValidity('Please enter your Surname!!')" oninput="SetCustomValidity('')"/>
+            </br>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="0">Select</option>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+            </select>
+            </br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required="true"/>
+            </br>
+            <label for="cellno">Cell Number:</label>
+            <input type="tel" id="cellno" name="cellno" placeholder="71000000" required="true" oninvalid="SetCustomValidity('Please enter your Cell No!!')" oninput="SetCustomValidity('')"/></br>
+            <label for="country">Country:</label>
+            <select id="country" name="country"> </select>
+            </br>
+            <div class="container">
+                <div class="form-group">
+                    <label for="suggestions">We'd love to hear your suggestions and ideas for improvement:</label>
+                    <textarea id="suggestions" name="suggestions" required></textarea>
+                </div>
+            </div>
+            <hr>
+            <input type="submit" value="Submit" id="register" name="register" class="button"/>
+            <input type="reset" value="Clear" id="clearbutton" name="clearbutton" class="button"/>
+        </fieldset>
+    </form>
+    
+ 
+</body>
+ 
+</html>

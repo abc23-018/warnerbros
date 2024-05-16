@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNERBROS | TV SHOWS</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style></style>
+        <link href="CSS/try.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="maincontainer">
+
+        <nav id="banner" class="sticky">
+            <a id="log" href="index.html">
+                <img id="logo" src="images/wb.png"> WarnerBros
+            </a>
+            <a id="line" href="index.html">Home</a>
+            <div class="dropdown">
+                <a id="line" href="movies.html">Movies</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="megan.html">M3GAN</a>
+                    <a href="thetutor.html">THE TUTOR</a>
+                    <a href="thor.html">THOR</a>
+                    <a href="blended.html">BLENDED</a>
+                    <a href="saltburn.html">SALTBURN</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="line" class="active" href="tvshows.html">Tv Shows</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="criminal.html">CRIMINAL RECORD</a>
+                    <a href="fool.html">FOOL ME ONCE</a>
+                    <a href="kitty.html">XO, KITTY</a>
+                    <a href="lawyer.html">THE LINCOLN LAWYER</a>
+                    <a href="night.html">NIGHT AGENT</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="line" href="games.html">Games and Apps</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="chess.html">THE CHESS</a>
+                    <a href="monopoly.html">MONOPOLY POKER</a>
+                    <a href="dominoes.html">DOMINOES</a>
+                    <a href="snakes.html">SNAKES AND LADDERS</a>
+                    <a href="dominate.html">DOMINATE</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="line" href="collections.html">Collections</a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <input type="search" id="myInput" placeholder="Search..">
+            <a href="feedback.html">
+                <button id="feedback">Feedback</button>
+            </a>
+        </nav>
+        <script>
+            // JavaScript to add/remove sticky class on scroll
+            window.onscroll = function() {stickyHeader()};
+
+            var header = document.getElementById("banner");
+            var sticky = header.offsetTop;
+
+            function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+        </script>
+
+        <div id="maincontent">
+
+            <div id="image-container" class="line">
+            <h3>What's new on WarnerBros</h3>
+                <div id="movies">
+
+                    <div id="scroll-left" onclick="scrollLeft()">
+                        &lt;
+                    </div>
+                    <!-- Right button -->
+                    <div id="scroll-right" onclick="scrollRight()">
+                        &gt;
+                    </div>
+
+                    <div class="box">
+                        <a href="criminal.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/criminal.jpeg" alt="CRIMINAL RECORD">
+                            </div>
+                            <h4>CRIMINAL RECORD</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="fool.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/foolme.jpeg" alt="FOOL ME ONCE">
+                            </div>
+                            <h4>FOOL ME ONCE</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="kitty.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/kitty.jpeg" alt="XO, KITTY">
+                            </div>
+                            <h4>XO, KITTY</h4>
+                            <span>1 Season | Romance</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="lawyer.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/lawyer.jpeg" alt="THE LINCOLN LAWYER">
+                            </div>
+                            <h4>THE LINCOLN LAWYER</h4>
+                            <span>2 Seasons | Drama</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="night.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/nightagent.jpeg" alt="NIGHT AGENT">
+                            </div>
+                            <h4>NIGHT AGENT</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/obsession.jpeg" alt="OBSESSION">
+                            </div>
+                            <h4>OBSESSION</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="image-container" class="line">
+                <div id="scroll-left" onclick="scrollLeft()">
+                    &lt;
+                </div>
+                <!-- Right button -->
+                <div id="scroll-right" onclick="scrollRight()">
+                    &gt;
+                </div>
+                <h3>ACTION</h3>
+                <div id="movies">
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/nightagent.jpeg" alt="NIGHT AGENT">
+                            </div>
+                            <h4>NIGHT AGENT</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/citadel.jpeg" alt="CITADEL">
+                            </div>
+                            <h4>CITADEL</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/obliterated.jpeg" alt="OBLITERATED">
+                            </div>
+                            <h4>OBLITERATED</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="criminalrecord.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/criminal.jpeg" alt="CRIMINAL RECORD">
+                            </div>
+                            <h4>CRIMINAL RECORD</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Movies/tutor.jpeg" alt="THE TUTOR">
+                            </div>
+                            <h4>THE TUTOR</h4>
+                            <span>92 min | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/furies.jpeg" alt="FURIES">
+                            </div>
+                            <h4>FURIES</h4>
+                            <span>1 Season | Action</span>
+                        </a>
+                    </div>                    
+
+                </div>
+            </div>
+
+            <div id="image-container" class="line">
+                <div id="scroll-left" onclick="scrollLeft()">
+                    &lt;
+                </div>
+                <!-- Right button -->
+                <div id="scroll-right" onclick="scrollRight()">
+                    &gt;
+                </div>
+                <h3>ROMANCE</h3>
+                <div id="movies">
+                    
+                    <div class="box">
+                        <a href="wrathofbecky.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/oneday.jpeg" alt="ONE DAY">
+                            </div>
+                            <h4>ONE DAY</h4>
+                            <span>1 Season | Romance</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/perfectstory.jpeg" alt="A PERFECT STORY">
+                            </div>
+                            <h4>A PERFECT STORY</h4>
+                            <span>1 Season | Romance</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/feelgood.jpg" alt="FEEL GOOD">
+                            </div>
+                            <h4>FEEL GOOD</h4>
+                            <span>2 Season | Romance</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/withlove.jpeg" alt="WITH LOVE">
+                            </div>
+                            <h4>WITH LOVE</h4>
+                            <span>2 Seasons | Romance</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/king.jpeg" alt="KING THE LAND">
+                            </div>
+                            <h4>KING THE LAND</h4>
+                            <span>1 Season | ROMANCE</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/never.jpeg" alt="NEVER HAVE I EVER">
+                            </div>
+                            <h4>NEVER HAVE I EVER</h4>
+                            <span>4 Seasons | Romance</span>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+
+            <div id="image-container" class="line">
+                <div id="scroll-left" onclick="scrollLeft()">
+                    &lt;
+                </div>
+                <!-- Right button -->
+                <div id="scroll-right" onclick="scrollRight()">
+                    &gt;
+                </div>
+                <h3>THRILLER</h3>
+                <div id="movies">
+                    
+                    <div class="box">
+                        <a href="wrathofbecky.html">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/bodyguard.jpeg" alt="BODYGUARD">
+                            </div>
+                            <h4>BODYGUARD</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/obsession.jpeg" alt="OBSESSION">
+                            </div>
+                            <h4>OBSESSION</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/foolme.jpeg" alt="FOOL ME ONCE">
+                            </div>
+                            <h4>FOOL ME ONCE</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/terminal.jpeg" alt="THE TERMINAL LIST">
+                            </div>
+                            <h4>THE TERMINAL LIST</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/diplomat.jpeg" alt="THE DIPLOMAT">
+                            </div>
+                            <h4>THE DIPLOMAT</h4>
+                            <span>1 Season | Thriller</span>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <div id="box-img">
+                                <img id="imgs" src="images/Shows/treason.jpeg" alt="TREASON">
+                            </div>
+                            <h4>TREASON</h4>
+                            <span>89 min | Thriller</span>
+                        </a>
+                    </div>                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+
+    </div>
+    <footer class="footer">
+        <p>© 2024 Warner Bros. All rights reserved.</p>
+        <span id="tiktok">
+            <a href="tiktok.com">
+                <img src="images/social media/twitter.png" title="Tiktok" alt="Tiktok">
+            </a>
+        </span>
+        <span id="whatsapp">
+            <a href="whatsapp.com">
+                <img src="images/social media/whatsapp.png" title="WhatsApp" alt="WhatsApp">
+            </a>
+        </span>
+        <span id="instagram">
+            <a href="instagram.com">
+                <img src="images/social media/instagram.png" title="Instagram" alt="Instagram">
+            </a>
+        </span>
+        <span id="linkedin">
+            <a href="linkedin.com">
+                <img src="images/social media/facebook.jpeg" title="LinkedIn" alt="Facebook">
+            </a>
+        </span>
+    </footer>
+    
+</body>
+</html>
