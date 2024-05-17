@@ -59,8 +59,9 @@ body{
     display: block;
   }
 .dropdown {
-    display: inline;
+    display: inline-block;
     position: relative;
+    padding-right: 15px;
 }
 .dropdown-content a {
     color: black;
@@ -107,7 +108,7 @@ body{
 #subtitle{
     padding-top: 3%;
 }
-/* Add white lines between sections */
+/* Add red lines between sections */
 .line {
     border-bottom: 3px solid red;
     margin-bottom: 20px; /* Add some spacing between sections */
@@ -157,7 +158,9 @@ body{
     height: 6vh;
 
 }
-
+.responsive{
+    display: none;
+}
 /* Adjust layout for smaller screens */
 @media (min-width: 577px) and (max-width: 800px) {
     .line {

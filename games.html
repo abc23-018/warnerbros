@@ -9,21 +9,58 @@
             <link href="CSS/try.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="maincontainer">
-            <header id="banner" class="sticky">
-                <a id="log" href="index.html">
-                    <img id="logo" src="images/wb.png"> WarnerBros
-                </a>
-                <a id="line" href="index.html">Home</a>
+        <nav id="banner" class="sticky">
+            <a id="log" href="index.html">
+                <img id="logo" src="images/wb.png"> WarnerBros
+            </a>
+            
+            <a id="line" href="index.html">Home</a>
+            <div class="dropdown">
                 <a id="line" href="movies.html">Movies</a>
-                <a id="line" href="tvshows.html">Tv Shows</a>
-                <a id="line" class="active" href="games.html">Games & Apps</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="megan.html">M3GAN</a>
+                    <a href="thetutor.html">THE TUTOR</a>
+                    <a href="thor.html">THOR</a>
+                    <a href="blended.html">BLENDED</a>
+                    <a href="saltburn.html">SALTBURN</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="line" href="tvshows.html">Tv&nbsp;Shows</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="criminal.html">CRIMINAL RECORD</a>
+                    <a href="fool.html">FOOL ME ONCE</a>
+                    <a href="kitty.html">XO, KITTY</a>
+                    <a href="lawyer.html">THE LINCOLN LAWYER</a>
+                    <a href="night.html">NIGHT AGENT</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a id="line" class="active" href="games.html">Games&nbsp;and&nbsp;Apps</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="chess.html">THE CHESS</a>
+                    <a href="monopoly.html">MONOPOLY POKER</a>
+                    <a href="dominoes.html">DOMINOES</a>
+                    <a href="snakes.html">SNAKES AND LADDERS</a>
+                    <a href="dominate.html">DOMINATE</a>
+                </div>
+            </div>
+            <div class="dropdown">
                 <a id="line" href="collections.html">Collections</a>
-                <input type="text" id="myInput"  placeholder="Search..">
-                <a href="feedback.html">
-                    <button id="feedback">Feedback</button>
-                </a>
-            </header>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <input type="search" id="myInput" placeholder="Search..">
+            <a href="feedback.html">
+                <button id="feedback">Feedback</button>
+            </a>
+            
+            <a class="responsive">
+                <i class="icon">&equiv;</i>
+            </a>
+        </nav>
               
             <div id="maincontent">
                 <div id="image-container" class="line">
