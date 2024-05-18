@@ -74,9 +74,7 @@ body{
 .sticky .icon {
     display: none;
   }
-.responsive{
-    display: none;
-}
+
 #myInput{
     margin-left: 60px;
     width: 200px;
@@ -161,7 +159,6 @@ body{
     height: 6vh;
 
 }
-<<<<<<< HEAD
 .sticky.responsive {position: relative;}
     .sticky.responsive a.icon {
       position: absolute;
@@ -188,11 +185,7 @@ body{
         display: block;
       }
 
-=======
-.responsive{
-    display: none;
-}
->>>>>>> a1d5d403d9fed2770893725bc91cc797d378d59b
+
 /* Adjust layout for smaller screens */
 @media (min-width: 577px) and (max-width: 800px) {
     .line {
