@@ -74,6 +74,9 @@ body{
 .sticky .icon {
     display: none;
   }
+.responsive{
+    display: none;
+}
 #myInput{
     margin-left: 60px;
     width: 200px;
