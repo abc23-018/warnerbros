@@ -205,7 +205,7 @@ body{
         width:100%;
     }
     #imgs {
-        width: 80%;
+        width: 80%; /* Make images responsive */
         max-height: 50px;
         min-height: 1vh;
     }
